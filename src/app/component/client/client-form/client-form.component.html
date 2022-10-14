@@ -1,0 +1,30 @@
+<form [formGroup]="candidatForm"  novalidate>
+      <p>Customer</p>
+      <mat-form-field>
+        <mat-label>customerId</mat-label>
+        <input matInput placeholder="PlaceCustomerId" formControlName="customerId">
+      </mat-form-field>
+      <mat-form-field>
+      <mat-label>customerName</mat-label>
+        <input matInput placeholder="customerName" formControlName="customerName">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>branchCode</mat-label>
+        <input matInput placeholder="branchCode" formControlName="branchCode">
+      </mat-form-field>
+ 
+    <div mat-dialog-actions>
+      
+    
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">No Thanks</button>
+      <button mat-button [mat-dialog-close] cdkFocusInitial>Close</button>
+
+      <button mat-button (click)="enregistrer()">save</button>
+      <button mat-button color="accent" (click)="onClear()"><mat-icon>clear_all</mat-icon></button>
+    </div>
+    
+    </form>
+     
+    

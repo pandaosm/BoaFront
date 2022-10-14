@@ -1,0 +1,21 @@
+<h1 mat-dialog-title>Favorite Animal</h1>
+<div mat-dialog-content>
+  My favorite animal is:
+  <ul>
+    <li>
+      <span>&#10003;</span>{{data.customerId}}
+    </li>
+    <li>
+        <span>&#10003;</span> {{data.customerName | uppercase}}
+    </li>
+    <li>
+        <span>&#10003;</span> {{data.branchCode}}
+    </li>
+  </ul>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">No Thanks</button>
+    <button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button>
+
+  </div>
